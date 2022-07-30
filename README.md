@@ -11,10 +11,10 @@
 | position           | text   | null: false               |
 
 ### Association
-- has_many :prototyepes
+- has_many :prototypes
 - has_many :comments
 
-## prototyepesテーブル
+## prototypesテーブル
 
 | Column     | Type       | Options                            |
 | ---------- | ---------- | ---------------------------------- |
@@ -32,9 +32,9 @@
 | Column     | Type       | Options                            |
 | ---------- | ---------- | ---------------------------------- |
 | content    | text       | null: false                        |
-| prototyepe | references | null: false ,foreign_key: true     |
+| prototype | references | null: false ,foreign_key: true     |
 | user       | references | null: false ,foreign_key: true     |
 
 ### Association
 - belongs_to :user
-- belongs_to :prototyepe
+- belongs_to :prototype
